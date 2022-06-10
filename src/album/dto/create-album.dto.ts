@@ -11,7 +11,7 @@ export class CreateAlbumDto {
 
     @IsInt()
     @Min(0)
-    qts_artistas: number;
+    qts_artists: number;
 
     @IsInt()
     @Min(0)

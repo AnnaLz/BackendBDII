@@ -6,6 +6,7 @@ import { AppService } from './app.service';
 import { ArtistModule } from './artist/artist.module';
 import { TrackModule } from './track/track.module';
 import { AlbumModule } from './album/album.module';
+import { ArtistAlbumModule } from './artist_album/artist_album.module';
 
 @Module({
   imports: [
@@ -22,7 +23,8 @@ import { AlbumModule } from './album/album.module';
     }),
     ArtistModule,
     TrackModule,
-    AlbumModule
+    AlbumModule,
+    ArtistAlbumModule
   ],
   controllers: [AppController],
   providers: [AppService],

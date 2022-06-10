@@ -11,8 +11,8 @@ export class Album extends BaseEntity {
     @Column({ name: 'release_date', type: 'date'})
     release_date: Date;
 
-    @Column({ name: 'qtd_artistas', type: 'int'})
-    qtd_artistas: number;
+    @Column({ name: 'qtd_artists', type: 'int'})
+    qtd_artists: number;
 
     @Column({ name: 'qtd_tracks', type: 'int'})
     qtd_tracks: number;
