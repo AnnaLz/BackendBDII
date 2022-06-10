@@ -1,8 +1,8 @@
 import { Album } from "src/album/entities/album.entity";
-import { BaseEntity, Column, Entity, JoinColumn, OneToOne, PrimaryColumn } from "typeorm";
+import { Column, Entity, JoinColumn, OneToOne, PrimaryColumn } from "typeorm";
 
 @Entity()
-export class Track extends BaseEntity {
+export class Track {
     @PrimaryColumn({ name: 'id', type: 'varchar'})
     id: string;
 

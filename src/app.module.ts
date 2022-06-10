@@ -7,6 +7,8 @@ import { ArtistModule } from './artist/artist.module';
 import { TrackModule } from './track/track.module';
 import { AlbumModule } from './album/album.module';
 import { ArtistAlbumModule } from './artist_album/artist_album.module';
+import { ArtistGenresModule } from './artist_genres/artist_genres.module';
+import { ArtistTrackModule } from './artist_track/artist_track.module';
 
 @Module({
   imports: [
@@ -24,7 +26,9 @@ import { ArtistAlbumModule } from './artist_album/artist_album.module';
     ArtistModule,
     TrackModule,
     AlbumModule,
-    ArtistAlbumModule
+    ArtistAlbumModule,
+    ArtistGenresModule,
+    ArtistTrackModule
   ],
   controllers: [AppController],
   providers: [AppService],

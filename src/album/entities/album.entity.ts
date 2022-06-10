@@ -1,7 +1,7 @@
-import { BaseEntity, Column, Entity, PrimaryColumn } from "typeorm";
+import { Column, Entity, PrimaryColumn } from "typeorm";
 
 @Entity()
-export class Album extends BaseEntity {
+export class Album {
     @PrimaryColumn({ name: 'id', type: 'varchar'})
     id: string;
     
