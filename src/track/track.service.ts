@@ -17,7 +17,8 @@ export class TrackService {
     return this.repository.find();
   }
 
-  findOne(id): Promise<Track> {
-    return this.repository.findOne(id);
+  async findOne(id: string): Promise<Track> {
+    const trackOne = await this.repository.findOneBy({id : id})
+    return trackOne;
   }
 }

@@ -17,7 +17,8 @@ export class ArtistAlbumService {
     return this.repository.find();
   }
 
-  findOne(id): Promise<ArtistAlbum> {
-    return this.repository.findOne(id);
+  async findOne(id: string): Promise<ArtistAlbum> {
+    const albumOne = await this.repository.findOneBy({id_artist : id})
+    return albumOne;
   }
 }
